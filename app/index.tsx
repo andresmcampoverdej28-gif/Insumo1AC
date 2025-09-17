@@ -1,14 +1,11 @@
+import ProfileDetails from "@/components/ProfileDetails";
 import "@/global.css";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
 export default function Index() {
   return (
-    <View className="flex-col bg-white w-screen-safe h-screen-safe">
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View className="flex-col items-center bg-white w-screen h-screen p-4">
+      <ProfileDetails/>
     </View>
   );
 }
