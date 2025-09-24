@@ -1,3 +1,4 @@
+import CustomText from '@/components/ui/CustomText';
 import IconButton from '@/components/ui/IconButton';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import React from 'react';
@@ -11,9 +12,12 @@ const ProfileDetails = () => {
         source={require('@/assets/images/Buzz_Photo.jpg')}
         className="w-48 h-48 rounded-full"
       />
-      <Text className="text-2xl font-bold">Andres Campoverde</Text>
-      <Text className="text-xl text-gray-400 font-bold">Brawl Stars' Pro Player</Text>
-      <View className="flex-row mt-4 space-x-4">
+
+    <CustomText variant='title' value="Andrés Campoverde"></CustomText>
+    <CustomText variant='subtitle' value="Brawl Stars' Professional Player"></CustomText>
+    <CustomText variant='subtitle' value="Informático"></CustomText>
+
+    <View className="flex-row mt-4 space-x-4">
         <IconButton
           icon={<Ionicons name="logo-instagram" size={24} color="black" />}
           onPress={() => avisarAlerta("Instagram")}
