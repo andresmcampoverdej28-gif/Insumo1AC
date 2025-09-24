@@ -13,28 +13,28 @@ const ProfileDetails = () => {
         className="w-48 h-48 rounded-full"
       />
 
-    <CustomText variant='title' value="Andrés Campoverde"></CustomText>
-    <CustomText variant='subtitle' value="Brawl Stars' Professional Player"></CustomText>
-    <CustomText variant='subtitle' value="Informático"></CustomText>
+        <CustomText variant='title' value="Andrés Campoverde"></CustomText>
+        <CustomText variant='subtitle' value="Brawl Stars' Professional Player"></CustomText>
+        <CustomText variant='subtitle' value="Informático"></CustomText>
 
-    <View className="flex-row mt-4 space-x-4">
-        <IconButton
-          icon={<Ionicons name="logo-instagram" size={24} color="black" />}
-          onPress={() => avisarAlerta("Instagram")}
-        />
-        <IconButton
-          icon={<Ionicons name="logo-x" size={24} color="black" />}
-          onPress={() => avisarAlerta("X")}
-        />
-        <IconButton
-          icon={<Ionicons name="logo-facebook" size={24} color="black" />}
-          onPress={() => avisarAlerta("Facebook")}
-        />
-        <IconButton
-          icon={<Ionicons name="logo-steam" size={24} color="black" />}
-          onPress={() => avisarAlerta("Steam")}
-        />
-      </View>
+        <View className="flex-row gap-4">
+            <IconButton
+            icon={<Ionicons name="logo-instagram" size={24} color="#c13584" />}
+            onPress={() => avisarAlerta("Instagram")}
+            />
+            <IconButton
+            icon={<Ionicons name="logo-x" size={24} color="black" />}
+            onPress={() => avisarAlerta("X")}
+            />
+            <IconButton
+            icon={<Ionicons name="logo-facebook" size={24} color="blue" />}
+            onPress={() => avisarAlerta("Facebook")}
+            />
+            <IconButton
+            icon={<Ionicons name="logo-steam" size={24} color="#2a475e" />}
+            onPress={() => avisarAlerta("Steam")}
+            />
+        </View>
     </View>
   );
 };

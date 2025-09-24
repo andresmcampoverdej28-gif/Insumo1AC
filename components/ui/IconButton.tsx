@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Alert, Pressable } from 'react-native';
-import Iconbutton from '@/components/IconButton';
+import { Pressable } from 'react-native';
 
 
 interface IconButtonProps{
@@ -10,7 +9,7 @@ interface IconButtonProps{
 
 const IconButton = ({icon, onPress}: IconButtonProps) => {
   return (
-    <Pressable onPress={onPress}>
+    <Pressable onPress={onPress} className='rounded-lg p-2 bg-gray-200 shadow-lg shadow-black'>
          {icon}
     </Pressable>
   )
