@@ -17,7 +17,7 @@ const ProfileDetails = () => {
         <CustomText variant='subtitle' value="Brawl Stars' Professional Player"></CustomText>
         <CustomText variant='subtitle' value="Informático"></CustomText>
 
-        <View className="flex-row gap-4">
+        <View className="flex-row gap-4 mt-3">
             <IconButton
             icon={<Ionicons name="logo-instagram" size={24} color="#c13584" />}
             onPress={() => avisarAlerta("Instagram")}
@@ -27,12 +27,12 @@ const ProfileDetails = () => {
             onPress={() => avisarAlerta("X")}
             />
             <IconButton
-            icon={<Ionicons name="logo-facebook" size={24} color="blue" />}
-            onPress={() => avisarAlerta("Facebook")}
+            icon={<Ionicons name="logo-tiktok" size={24} color="black" />}
+            onPress={() => avisarAlerta("Tiktok")}
             />
             <IconButton
-            icon={<Ionicons name="logo-steam" size={24} color="#2a475e" />}
-            onPress={() => avisarAlerta("Steam")}
+            icon={<Ionicons name="logo-youtube" size={24} color="red" />}
+            onPress={() => avisarAlerta("Youtube")}
             />
         </View>
     </View>

@@ -3,7 +3,7 @@ import { Text } from 'react-native';
 
 interface CustomTextProps{
     value: string;
-    variant: "normal" | "subtitle" | "title" | "microtitle" | "profession";
+    variant: "normal" | "subtitle" | "title" | "microtitle" | "profession" | "experience" | "DateExp";
 }
 
 const CustomText = ({value, variant}:CustomTextProps) => {
@@ -27,7 +27,11 @@ function selectVariant(variant:string):string{
         case "microtitle":
             return "text-gray-400 font-bold text-xl"
         case "profession":
-            return "text-white-400 font-normal text-xl"
+            return "text-white font-normal text-2xl underline"
+        case "experience":
+            return "text-white"
+        case "DateExp":
+            return "text-gray-400"
         default:
             return "text-black font-normal"
     }

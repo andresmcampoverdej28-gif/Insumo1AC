@@ -6,12 +6,12 @@ import { Alert, View } from 'react-native';
 
 const SkillDetails = () => {
   return (
-    <View className='bg-zinc-700 w-screen h-screen rounded-[75]'>
-        <View className='items-right m-10'>
+    <View className='bg-zinc-700 w-screen h-screen rounded-[75] mt-10'>
+        <View className='items-right mt-10 ml-10 mb-5'>
             <CustomText variant='microtitle' value='Skill'></CustomText>
         </View>
         
-        <View className="flex-row gap-4 content-between my-[20] justify-center">
+        <View className="flex-row gap-6 content-between justify-center">
             <IconButton
             icon={<Ionicons name="logo-javascript" size={48} color="gold" />}
             onPress={() => avisarAlerta("JavaScript")}
@@ -30,14 +30,21 @@ const SkillDetails = () => {
             />
         </View>
 
-        <View className='items-right m-10'>
+        <View className='items-right mt-20 ml-10'>
             <CustomText variant='microtitle' value='Profession'></CustomText>
-            <CustomText variant='profession' value='Programador'></CustomText>
         </View>
 
-        <View className='items-right m-10'>
-            <CustomText variant='microtitle' value='Experience'></CustomText>
-            <CustomText variant='profession' value='Programador'></CustomText>
+        <View className='items-right underline mt-5 ml-10'>
+          <CustomText variant='profession' value='React Native programmer.       '>
+          </CustomText>
+        </View>
+
+        <View className="mt-20 ml-10">
+          <CustomText variant="microtitle" value="Experience" />
+          <View className="bg-zinc-600 mt-6 ml-20 pl-7 p-3 rounded-[20px]">
+            <CustomText variant="experience" value="Gamer and Programmer" />
+            <CustomText variant="DateExp" value="Sep 2023 - Present" />
+          </View>
         </View>
     </View>
 
