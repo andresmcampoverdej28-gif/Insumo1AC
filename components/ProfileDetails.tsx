@@ -2,7 +2,7 @@ import CustomText from '@/components/ui/CustomText';
 import IconButton from '@/components/ui/IconButton';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import React from 'react';
-import { Alert, Image, Text, View } from 'react-native';
+import { Image, Linking, Text, View } from 'react-native';
 
 const ProfileDetails = () => {
   return (
@@ -20,27 +20,23 @@ const ProfileDetails = () => {
         <View className="flex-row gap-4 mt-3">
             <IconButton
             icon={<Ionicons name="logo-instagram" size={24} color="#c13584" />}
-            onPress={() => avisarAlerta("Instagram")}
-            />
-            <IconButton
-            icon={<Ionicons name="logo-x" size={24} color="black" />}
-            onPress={() => avisarAlerta("X")}
+            onPress={() => avisarAlerta("https://www.instagram.com/ximench_bs")}
             />
             <IconButton
             icon={<Ionicons name="logo-tiktok" size={24} color="black" />}
-            onPress={() => avisarAlerta("Tiktok")}
+            onPress={() => avisarAlerta("https://www.tiktok.com/@ximench_bstars")}
             />
             <IconButton
             icon={<Ionicons name="logo-youtube" size={24} color="red" />}
-            onPress={() => avisarAlerta("Youtube")}
+            onPress={() => avisarAlerta("http://www.youtube.com/@Ximenchbs")}
             />
         </View>
     </View>
   );
 };
 
-const avisarAlerta = (mensaje: string) => {
-  Alert.alert(mensaje);
+const avisarAlerta = (url: string) => {
+  Linking.openURL(url);
 };
 
 export default ProfileDetails;
